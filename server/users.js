@@ -9,7 +9,7 @@ const addUser = ({ id, room, name }) => {
         return { error: 'Username is taken' };
     }
     const user = { id, room, name };
-    user.push();
+    users.push(user);
     return { user}
 }
 
