@@ -9,7 +9,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 const { addUser, removeUser, getUser, getUserInRoom }= require( "./users.js");
 const { use } = require('./router');
-io.on('connection', (socket) => {
+io.on('connect', (socket) => {
     console.log("A new connection!!");
 
     socket.on('join', ({ name, room },callback) => {
@@ -24,11 +24,11 @@ io.on('connection', (socket) => {
         callback();
     });
 
-    socket.on('sendMessage', (message,callback) => {
+    socket.on('sendMessage', (message, callback) => {
         const user = getUser(socket.id);
         io.to(user.room).emit('message', { user: user.name, text: message });
         callback();
-    })
+    });
 
     socket.on('disconnect', () => {
         console.log('User has left');
