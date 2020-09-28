@@ -4,7 +4,6 @@ import './Infobar.css';
 const Infobar = ({room}) => (
     <div className="infobar">
         <div className="leftInnerContainer">
-            <img className="onlineIcon" alt="Online Room" />
             <h3>{room}</h3>
         </div>
         <div className="rightInnerContainer">
