@@ -8,7 +8,7 @@ const Infobar = ({room}) => (
         </div>
         <div className="rightInnerContainer">
             <a href="/">
-                <img alt="Close Image"/>
+                CLOSE
             </a>
         </div>
     </div>
