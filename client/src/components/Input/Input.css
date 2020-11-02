@@ -1,16 +1,18 @@
 .form {
   display: flex;
-  top: 10%;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
+  top: auto;
+  border: black;
+  border-radius: 5px;
+  width: 100%;
+  background-color: blueviolet;
 }
 
 .input {
-  border: none;
-  border-radius: 0;
-  padding: 7px;
-  width: 110%;
+  display: flex;
+  border: black;
+  border-radius: 10px;
+  padding: 2px;
+  width: 100%;
   font-size: 1.2em;
 }
 
@@ -27,6 +29,6 @@ input:focus, textarea:focus, select:focus{
   background: #1709e0b7;
   padding: 20px;
   display: inline-block;
-  border: none;
+  border-radius: 10px;
   width: 20%;
 }

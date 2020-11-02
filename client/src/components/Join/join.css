@@ -51,7 +51,7 @@ html, body {
   margin-top: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width:  220px) and (max-width: 360px) {
   .joinOuterContainer {
     height: 100%;
   }
